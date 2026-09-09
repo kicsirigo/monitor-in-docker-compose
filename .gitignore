@@ -1,1 +1,6 @@
 .env
+*.env
+!.env.example
+caddy/.env
+caddy/*.env
+!caddy/.env.example

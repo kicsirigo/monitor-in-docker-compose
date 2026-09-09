@@ -1,0 +1,11 @@
+{
+    email {$ACME_EMAIL}
+}
+
+{$GRAFANA_DOMAIN} {
+    tls {
+        dns duckdns {$DUCKDNS_API_TOKEN}
+    }
+
+    reverse_proxy grafana:3000
+}
