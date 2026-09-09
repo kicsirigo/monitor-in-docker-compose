@@ -27,8 +27,6 @@ services:
       - '--path.procfs=/host/proc'
       - '--path.sysfs=/host/sys'
       - '--path.rootfs=/rootfs'
-      - '--collector.netdev.device-exclude=^(veth.*|br-.*|docker.*)$'
-      - '--collector.netclass.ignored-devices=^(veth.*|br-.*|docker.*)$'
   
   prometheus:
     image: prom/prometheus:latest
